@@ -1,9 +1,8 @@
 <?php
-	//urlÐÎÊ½  index.php?controller=¿ØÖÆÆ÷Ãû&method=·½·¨Ãû
+	//urlè®¿é—®æ¨¡å¼  index.php?controller=æŽ§åˆ¶å™¨&method=æ–¹æ³•å
 	require_once('function.php');
 	require_once('config.php');
 	$view = ORG('Smarty/', 'Smarty', $viewconfig);
 	$controller = $_GET['controller'];
 	$method = $_GET['method'];
 	C($controller, $method);
-?>
