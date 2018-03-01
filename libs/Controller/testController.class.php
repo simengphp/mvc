@@ -1,14 +1,13 @@
 <?php
 	class testController{
-		function show(){//¿ØÖÆÆ÷µÄ×÷ÓÃÊÇµ÷ÓÃÄ£ÐÍ,²¢µ÷ÓÃÊÓÍ¼.½«Ä£ÐÍ²úÉúµÄÊý¾Ý´«µÝ¸øÊÓÍ¼.²¢ÈÃÏà¹ØÊÓÍ¼È¥ÏÔÊ¾
+		function show(){//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½Ä£ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼.ï¿½ï¿½Ä£ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½Í¼.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼È¥ï¿½ï¿½Ê¾
 			global $view;
 			//$testModel = new testModel();
 			$testModel = M('test');
 			$data = $testModel->get();
-			//$testView = V('test');
-			//$testView -> display($data);
-			$view ->assign('str', '¹þ¹þ¹þ¹þ');
-			$view ->display('test.tpl');
+			$testView = V('test');
+			$testView -> display($data);
+//			$view ->assign('str', 'test');
+//			$view ->display('test.tpl');
 		}
 	}
-?>

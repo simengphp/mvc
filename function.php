@@ -18,7 +18,7 @@
 		return $obj;
 	}
 	
-	function ORG($path, $name, $params=array()){// path 是路径  name是第三方类名 params 是该类初始化的时候需要指定、赋值的属性，格式为 array(属性名=>属性值, 属性名2=>属性值2……)
+	function ORG($path, $name, $params=array()){
 		require_once('libs/ORG/'.$path.$name.'.class.php');
 		//eval('$obj = new '.$name.'();');
 		$obj = new $name();
@@ -36,4 +36,3 @@
 		return (!get_magic_quotes_gpc())?addslashes($str):$str;
 	}
 
-?>
