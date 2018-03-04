@@ -10,6 +10,7 @@ Controller==控制器的文件
 Model==模型文件
 View==视图文件
 ORG==第三方文件
+extend==扩展
 
 1、统一单入口文件index.php
 
@@ -19,5 +20,7 @@ ORG==第三方文件
 
 3、模板引擎使用的是smarty
 
+
+4、整合了memcache-03-04
 
 未来：各种模式的设计添加
